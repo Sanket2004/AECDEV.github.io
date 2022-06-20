@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  }
+
+body{
+    font-family: 'Product Sans';
+}
+a{
+  font-family: 'Product Sans';
+}
+#hero_name{
+    padding-top: 20px;
+    color: #f35626;
+	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 10s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+
+.shimmer {
+
+  color: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(
+    to right,
+    #ed8080 0%,
+    #2a77d6 16%,
+    #5eb524 32%,
+    #eacd25 48%,
+    #ed8080 64%,
+    #2a77d6 80%,
+    #5eb524 100%
+  );
+
+  background-size: 300% 300%;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-color: #222;
+  
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+
+  animation: shimmer infinite 3s linear;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
