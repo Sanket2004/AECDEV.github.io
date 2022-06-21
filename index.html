@@ -1,35 +1,181 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.15.4/dist/full.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Student Delevopers Community of Asansol Engineering College
+    #AECDEV" />
+  <meta name="keywords" content="Asansol Engineering College Developers Forum" />
+
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+
+  <!--Replace with your tailwind.css once created-->
+  <link href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css" rel="stylesheet" />
   <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
   <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2285%22>⭐</text></svg>" type="image/x-icon">
+  <link rel="shortcut icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2285%22>⭐</text></svg>"
+    type="image/x-icon">
   <title>AEC Developers Forum | AECDEV</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+    /*       html {
+        font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      } */
+    @font-face {
+      font-family: 'Product Sans';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+    }
+
+
+
+    html {
+      font-family: 'Product Sans';
+      letter-spacing: 2px;
+    }
+
+    .alert_style {
+      text-align: center;
+      padding: 10px;
+      font-size: var(--small-font-size);
+      background-color: var(--first-color);
+      color: #fff;
+      border-radius: 0.5rem;
+      display: none;
+    }
+
+    .alert_style {
+      color: blueviolet;
+    }
+  </style>
 </head>
 
-<body class="bg-stone-100">
-  <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/62b0a179b0d10b6f3e784fa4/1g60vdh23';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
-  </script>
-  <!--End of Tawk.to Script-->
+<body class="leading-normal tracking-normal text-indigo-400 m-6 bg-cover bg-fixed"
+  style="background-image: url('header.png');">
 
-<!------------------- Registration Form -------------------->
+<!-- This component uses Swiper JS - https://swiperjs.com/ -->
+
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<div style="letter-spacing: 3px;" class="px-4 py-3 rounded-2xl">
+  <div class="flex items-center justify-center max-w-3xl mx-auto">
+    <button
+      class="hidden sm:block sm:rounded sm:transition sm:text-gray-700 hover:text-gray-500 swiper-prev-button"
+      aria-label="Previous Slide"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-5 h-5"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </button>
+
+    <div class="swiper">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <p class="text-lg font-bold text-center shimmer">
+            AECDEV Community Registration-2022 is Going On !
+
+            <a class="underline" type="button" style="cursor: pointer;" data-modal-toggle="authentication-modal">Do Register Now &rarr; </a>
+          </p>
+        </li>
+
+        <li class="swiper-slide">
+          <p class="text-lg font-bold text-center shimmer">
+            Join Our WhatsApp Group
+
+            <a class="underline" type="button" data-modal-toggle="popup-modal" style="cursor: pointer;" > 👆 Click To Join &rarr; </a>
+          </p>
+        </li>
+      </ul>
+    </div>
+
+    <button
+      class="hidden sm:block sm:rounded sm:transition sm:text-gray-700 hover:text-gray-500 swiper-next-button"
+      aria-label="Next Slide"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-5 h-5"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+
+<script>
+  new Swiper('.swiper', {
+    effect: 'fade',
+    loop: true,
+    autoplay: {
+      delay: 5000,
+    },
+    fadeEffect: {
+      crossFade: true,
+    },
+    navigation: {
+      prevEl: '.swiper-prev-button',
+      nextEl: '.swiper-next-button',
+    },
+  })
+</script>
+
+  <div id="popup-modal" tabindex="-1"
+    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 md:inset-0 h-modal md:h-full justify-center items-center"
+    aria-hidden="true">
+    <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+      <div class="relative bg-white opacity-75 rounded-lg shadow dark:bg-gray-700">
+        <button type="button"
+          class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white"
+          data-modal-toggle="popup-modal">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+        <div class="p-6 text-center">
+          <svg class="mx-auto mb-4 w-14 h-14 text-gray-400 dark:text-gray-200" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Click To Join AECDEV WhatsApp Group</h3>
+         <a href="https://chat.whatsapp.com/DigFbJkam36AlJAOO4FjP2"><button data-modal-toggle="popup-modal" type="button" 
+            class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
+            Yes, I'm sure
+          </button></a> 
+          <button data-modal-toggle="popup-modal" type="button"
+            class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">No,
+            cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!------------------- Registration Form -------------------->
 
   <div id="authentication-modal" tabindex="-1" aria-hidden="true"
     class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center">
@@ -47,15 +193,16 @@
         </button>
         <div class="py-6 px-6 lg:px-8">
           <h3 class="mb-4 text-xl font-medium text-gray-900 dark:text-white">Register in to our platform</h3>
-          <form class="space-y-6" action="https://formsubmit.co/sanketbanerjee.2004@gmail.com"
-          method="POST">
+          <form class="space-y-6" action="https://formsubmit.co/sanketbanerjee.2004@gmail.com" id="contact-form"
+            method="POST">
+            <div id="alert" class="alert_style"></div>
             <div>
-              <label for="name" name="AEC Developer Forum Registration Form 2022" ></label>
+              <label for="name" name="AEC Developer Forum Registration Form 2022"></label>
               <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your
                 Name</label>
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_subject" value="AECDEV Registration-2022">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_subject" value="AECDEV Registration-2022">
               <input type="text" name="Name" id="name"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                 placeholder="full name" required="">
@@ -63,7 +210,7 @@
             <div>
               <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your
                 email</label>
-                <input type="hidden" name="_autoresponse" value="Thanks For Registration.">
+              <input type="hidden" name="_autoresponse" value="Thanks For Registration.">
               <input type="email" name="Email" id="email"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                 placeholder="name@company.com" required="">
@@ -85,153 +232,290 @@
                 <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember
                   me</label>
               </div>
-              <a href="mailto:sanketbanerjee.2004@gmail.com" class="text-sm text-blue-700 hover:underline dark:text-blue-500">Contact Admin</a>
+              <a href="mailto:sanketbanerjee.2004@gmail.com"
+                class="text-sm text-blue-700 hover:underline dark:text-blue-500">Contact Admin</a>
             </div>
             <button type="submit"
               class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit
-              </button>
+            </button>
           </form>
         </div>
       </div>
     </div>
   </div>
 
-<!--------------------- Team members modal ------------------------------------------->
+  <script>
+    const form = document.getElementById("contact-form");
 
-  <div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal-id">
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("alert");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          Accept: "application/json",
+        },
+      })
+        .then((response) => {
+          status.innerHTML = "Your message has been sent.";
+          document.querySelector(".alert_style").style.display = "block";
+
+          // hide alert after 3 seconds
+          setTimeout(function () {
+            document.querySelector(".alert_style").style.display = "none";
+          }, 4000);
+          form.reset();
+        })
+        .catch((error) => {
+          status.innerHTML =
+            "Oops! There was a problem delivering your message, please contact via other means.";
+          document.querySelector(".alert_style").style.display = "block";
+
+          // hide alert after 3 seconds
+          setTimeout(function () {
+            document.querySelector(".alert_style").style.display = "none";
+          }, 4000);
+        });
+    }
+    form.addEventListener("submit", handleSubmit);
+  </script>
+
+  <!--------------------- Team members modal ------------------------------------------->
+
+  <div
+    class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center"
+    id="modal-id">
     <div class="relative w-auto my-6 mx-auto max-w-3xl">
       <!--content-->
       <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
         <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-        <!--body-->
-        <div class="py-16 bg-white rounded-3xl">
-          <div class="container m-auto px-6 space-y-8 text-gray-500 md:px-12 lg:px-20">
+          <!--body-->
+          <div class="py-16 bg-white rounded-3xl">
+            <div class="container m-auto px-6 space-y-8 text-gray-500 md:px-12 lg:px-20">
               <div class="flex items-center justify-center -space-x-2">
-                  <img loading="lazy" width="220" height="220" src="https://media-exp1.licdn.com/dms/image/C5603AQE7SB8xEcj_Xw/profile-displayphoto-shrink_800_800/0/1645427537931?e=1661385600&v=beta&t=tOduCkg4xTsQSkbG126vVygFNmLeMrtTWPRpLgZ_h08" alt="member photo" class="w-8 h-8 object-cover rounded-full">
-                  <img loading="lazy" width="220" height="220" src="./assets/images/abhijit.jpeg" alt="member photo" class="w-12 h-12 object-cover rounded-full">
-                  <img loading="lazy" width="220" height="220" src="https://media-exp1.licdn.com/dms/image/C4E03AQFDRTdTaL5WcA/profile-displayphoto-shrink_800_800/0/1642345314334?e=1661385600&v=beta&t=l9CvmbhJQ_hGmcn46Kg3yr_EemLtBY1o7h-yWlAO38Q" alt="member photo" class="z-10 w-16 h-16 object-cover rounded-full">
-                  <img loading="lazy" width="220" height="220" src="./assets/images/sanket.png" alt="member photo" class="z-10 w-16 h-16 object-cover rounded-full">
-                  <img loading="lazy" width="220" height="220" src="https://media-exp1.licdn.com/dms/image/C5603AQF7_HYZW9rb5Q/profile-displayphoto-shrink_800_800/0/1650030608200?e=1661385600&v=beta&t=A9aS8fFbbMBV041LouGn4YHrMU7QUF8DaqEBMe8c5J4" alt="member photo" class="relative w-12 h-12 object-cover rounded-full">
-                  <img loading="lazy" width="220" height="220" src="./assets/images/sahil.jpeg" alt="member photo" class="w-8 h-8 object-cover rounded-full">
+                <img loading="lazy" width="220" height="220"
+                  src="https://media-exp1.licdn.com/dms/image/C5603AQE7SB8xEcj_Xw/profile-displayphoto-shrink_800_800/0/1645427537931?e=1661385600&v=beta&t=tOduCkg4xTsQSkbG126vVygFNmLeMrtTWPRpLgZ_h08"
+                  alt="member photo" class="w-8 h-8 object-cover rounded-full">
+                <img loading="lazy" width="220" height="220"
+                  src="https://media-exp1.licdn.com/dms/image/C5603AQHbYhtM-gXqqQ/profile-displayphoto-shrink_800_800/0/1652974518250?e=1661385600&v=beta&t=NiLisD3YeyE1l2fn-abhU-4_VCHiSSI1D7IArPQk7YU"
+                  alt="member photo" class="w-12 h-12 object-cover rounded-full">
+                <img loading="lazy" width="220" height="220"
+                  src="https://media-exp1.licdn.com/dms/image/C4E03AQFDRTdTaL5WcA/profile-displayphoto-shrink_800_800/0/1642345314334?e=1661385600&v=beta&t=l9CvmbhJQ_hGmcn46Kg3yr_EemLtBY1o7h-yWlAO38Q"
+                  alt="member photo" class="z-10 w-16 h-16 object-cover rounded-full">
+                <img loading="lazy" width="220" height="220" src="./assets/images/sanket.png" alt="member photo"
+                  class="z-10 w-16 h-16 object-cover rounded-full">
+                <img loading="lazy" width="220" height="220"
+                  src="https://media-exp1.licdn.com/dms/image/C5603AQF7_HYZW9rb5Q/profile-displayphoto-shrink_800_800/0/1650030608200?e=1661385600&v=beta&t=A9aS8fFbbMBV041LouGn4YHrMU7QUF8DaqEBMe8c5J4"
+                  alt="member photo" class="relative w-12 h-12 object-cover rounded-full">
+                <img loading="lazy" width="220" height="220" src="./assets/images/sahil.jpeg" alt="member photo"
+                  class="w-8 h-8 object-cover rounded-full">
               </div>
               <div class="m-auto space-y-6 md:w-8/12 lg:w-7/12">
-                  <h1 class="text-4xl text-gray-700 font-bold text-center md:text-5xl">Get Started now</h1>
-                  <p class="text-xl text-center">Be a part of our  Developers Community of <span id="hero_name">Asansol Engineering College</span><br><span class="shimmer">AECDEV</span></p>
-                  <div class="flex flex-wrap justify-center gap-6">
-                      <a type="button" onclick="toggleModal('modal-id')" data-modal-toggle="authentication-modal" title="Get started" class="block w-full py-3 px-6 text-center text-white rounded-full transition bg-blue-500 hover:bg-blue-300 active:bg-blue-100 focus:bg-blue-100 sm:w-max">
-                          <span class="text-white ">
-                              Get started
-                          </span>
-                      </a>
-                      <button class="block w-full py-3 px-6 text-center text-white rounded-full transition bg-red-500 hover:bg-red-300 active:bg-red-100 focus:bg-blue-100 sm:w-max" type="button" onclick="toggleModal('modal-id')">
-                        Close
-                      </button>
-                  </div>
+                <h1 class="text-4xl text-white opacity-75 font-bold text-center md:text-5xl">Get Started now</h1>
+                <p class="text-xl text-center">Be a part of our Developers Community of <span id="hero_name">Asansol
+                    Engineering College</span><br><span class="shimmer">AECDEV</span></p>
+                <div class="flex flex-wrap justify-center gap-6">
+                  <a type="button" href="https://chat.whatsapp.com/DigFbJkam36AlJAOO4FjP2" title="Get started"
+                    class="block w-full py-3 px-6 text-center text-white rounded-full transition bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 transform transition hover:scale-105 duration-300 ease-in-out sm:w-max">
+                    <span class="text-white ">
+                      Join WhatsApp
+                    </span>
+                  </a>
+                  <button
+                    class="block w-full py-3 px-6 text-center text-white rounded-full transition bg-red-500 hover:bg-red-300 active:bg-red-100 focus:bg-blue-100 sm:w-max"
+                    type="button" onclick="toggleModal('modal-id')">
+                    Close
+                  </button>
+                </div>
               </div>
+            </div>
           </div>
-      </div> 
-        <!--footer-->
+          <!--footer-->
 
-      </div>
+        </div>
       </div>
     </div>
   </div>
   <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-id-backdrop"></div>
   <script type="text/javascript">
-    function toggleModal(modalID){
+    function toggleModal(modalID) {
       document.getElementById(modalID).classList.toggle("hidden");
       document.getElementById(modalID + "-backdrop").classList.toggle("hidden");
       document.getElementById(modalID).classList.toggle("flex");
       document.getElementById(modalID + "-backdrop").classList.toggle("flex");
     }
   </script>
-  
 
-<!--------------------------Hero Section----------------------------->
-<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#5000ca" fill-opacity="0.1" d="M0,192L60,165.3C120,139,240,85,360,69.3C480,53,600,75,720,112C840,149,960,203,1080,224C1200,245,1320,235,1380,229.3L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg> -->
-  <section class="text-white bg-stone-100">
-    <div class="max-w-screen-xl px-4 py-24 mx-auto lg:h-screen lg:items-center lg:flex">
-      <div class="max-w-3xl mx-auto text-center" >
-        <h1
-          class="text-3xl font-extrabold text-transparent sm:text-6xl bg-clip-text  shimmer">
-          Asansol Engineering College
-          <br>
-          <br>
-          <span id="hero_name" class="sm:block text-2xl sm:text-5xl">
-            Developers Forum
-          </span>
-        </h1>
+  <!--------------------------------------------  Hero ----------------------------------------------------->
+  <div class="h-full">
+    <!--Nav-->
+    <div class="w-full container mx-auto">
+      <div class="w-full flex items-center justify-between">
+        <a class="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+          href="#">
+          AEC<span
+            class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">DEV</span>
+        </a>
 
-        <p class="max-w-xl mx-auto mt-4 sm:leading-relaxed sm:text-xl text-purple-900 font-bold ">
-          Student Delevopers Community of Asansol Engineering College<br>#AECDEV
-        </p>
-
-        <div class="flex flex-wrap justify-center gap-4 mt-8">
-          <a class="block w-full px-12 py-3 text-sm font-medium text-white bg-blue-600 border border-blue-600 rounded sm:w-auto active:text-opacity-75 hover:bg-transparent hover:text-gray-600 focus:outline-none focus:ring"
-            type="button" data-modal-toggle="authentication-modal">
-            Get Started
+        <div class="flex w-1/2 justify-end content-center">
+          <a class="inline-block text-blue-300 no-underline hover:text-pink-700 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+            href="https://twitter.com/intent/tweet?url=#">
+            <svg class="fill-current h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+              <path
+                d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z">
+              </path>
+            </svg>
           </a>
-
-          <a class="block w-full px-12 py-3 text-sm font-medium text-gray-600 border border-blue-600 rounded sm:w-auto hover:bg-blue-600 hover:text-white active:bg-blue-500 focus:outline-none focus:ring"
-          type="button" onclick="toggleModal('modal-id')">
-            Learn More
+          <a class="inline-block text-blue-300 no-underline hover:text-pink-700 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+            href="https://www.facebook.com/sharer/sharer.php?u=#">
+            <svg class="fill-current h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+              <path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"></path>
+            </svg>
+          </a>
+          <a class="inline-block text-blue-300 no-underline hover:text-pink-700 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+            href="https://chat.whatsapp.com/DigFbJkam36AlJAOO4FjP2">
+            <svg class="fill-current h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" style="height:2.2rem;">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M18.403 5.633A8.919 8.919 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a8.981 8.981 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.926 8.926 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.446 7.446 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.448 7.448 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.413 7.413 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73-.205-.075-.354-.112-.504.112s-.58.729-.711.879-.262.168-.486.056-.947-.349-1.804-1.113c-.667-.595-1.117-1.329-1.248-1.554s-.014-.346.099-.458c.101-.1.224-.262.336-.393.112-.131.149-.224.224-.374s.038-.281-.019-.393c-.056-.113-.505-1.217-.692-1.666-.181-.435-.366-.377-.504-.383a9.65 9.65 0 0 0-.429-.008.826.826 0 0 0-.599.28c-.206.225-.785.767-.785 1.871s.804 2.171.916 2.321c.112.15 1.582 2.415 3.832 3.387.536.231.954.369 1.279.473.537.171 1.026.146 1.413.089.431-.064 1.327-.542 1.514-1.066.187-.524.187-.973.131-1.067-.056-.094-.207-.151-.43-.263">
+              </path>
+            </svg>
           </a>
         </div>
       </div>
-    </div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="0.1" d="M0,224L60,202.7C120,181,240,139,360,144C480,149,600,203,720,240C840,277,960,299,1080,304C1200,309,1320,299,1380,293.3L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-  </section>
-  
-  
-  
+    </div>
+
+    <!--Main-->
+    <div class="container pt-24 md:pt-36 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+      <!--Left Col-->
+      <div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
+        <h1 class="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left">
+          Asansol
+          <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">
+            Engineering College
+          </span>
+          Developers Forum
+        </h1>
+        <p class="leading-normal text-base font-semibold md:text-2xl mb-8 text-center md:text-left">
+          Student Delevopers Community of Asansol Engineering College<br>
+          <span
+            class="bg-clip-text font-bold text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">
+            #AECDEV
+          </span>
+        </p>
 
 
-                              
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="0.1" d="M0,192L60,165.3C120,139,240,85,360,69.3C480,53,600,75,720,112C840,149,960,203,1080,224C1200,245,1320,235,1380,229.3L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
-<div class="py-16 bg-stone-100" id="about">  
-  <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+        <form class="bg-gray-900 opacity-75 w-full shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4" id="contact-form"
+          action="https://formsubmit.io/send/1cffabd0-202f-4348-b24e-d68fa8e3ba02" method="POST">
+          <div id="alert" class="alert_style"></div>
+          <div class="mb-4">
+            <label class="block text-blue-300 py-2 font-bold mb-2" for="emailaddress">
+              Signup for our newsletter
+            </label>
+
+            <input
+              class="shadow appearance-none border rounded w-full p-3 text-white opacity-75 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+              id="emailaddress" type="email" name="Email" placeholder="you@somewhere.com">
+          </div>
+
+          <div class="flex items-center justify-between pt-4">
+            <button
+              class="bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+              type="submit">
+              Sign Up
+            </button>
+            <button
+              class="bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+              type="submit">
+              Sign Up
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!--Right Col-->
+      <div class="w-full xl:w-3/5 p-12 overflow-hidden">
+        <img
+          class="mx-auto w-full md:w-4/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6"
+          src="macbook.svg" />
+      </div>
+
+      <div class="mx-auto md:pt-16">
+        <div class="flex w-full justify-center md:justify-start pb-24 lg:pb-0 fade-in">
+
+          <div class="flex flex-wrap justify-center gap-4 mt-8">
+            <a class="bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+              type="button" data-modal-toggle="authentication-modal">
+              Get Started
+            </a>
+
+            <a class="bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+              type="button" onclick="toggleModal('modal-id')">
+              Learn More
+            </a>
+          </div>
+          <!--             <img src="App Store.svg" class="h-12 pr-12 transform hover:scale-125 duration-300 ease-in-out" />
+            <img src="Play Store.svg" class="h-12 transform hover:scale-125 duration-300 ease-in-out" /> -->
+        </div>
+      </div>
+
+      <!--Footer-->
+
+    </div>
+  </div>
+
+  <!-- Contents -->
+
+
+  <div class="py-16 bg-stone-100" id="about">
+    <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
       <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
         <div class="space-y-6 md:7/12 lg:w-6/12">
-          <h2 class="text-2xl text-blue-900 font-bold md:text-5xl">Why AECDEV !</h2>
+          <h2 class="text-2xl text-blue-900 font-extrabold md:text-5xl shimmer">Why AECDEV !</h2>
           <h3 class="text-2xl text-purple-300 font-bold md:text-3xl">Here Excellence Meets Supervision</h3>
           <div class="space-y-4">
-            <p class="text-gray-600">AECDEV Community is the Community Where we organize Events, Hackathons, and Workshops on different Technologies. Also, We Share Resources, Roadmaps to learn different technologies and share opportunities related to Internships and different tech programs.</p>
-            <p class="mt-4 text-gray-600"> Some of our projects</p>
-           
+            <p class="text-white opacity-75">AECDEV Community is the Community Where we organize Events, Hackathons, and
+              Workshops on different Technologies. Also, We Share Resources, Roadmaps to learn different technologies
+              and share opportunities related to Internships and different tech programs.</p>
+            <p class="mt-4 text-white opacity-75"> Some of our projects</p>
+
           </div>
-          <a href="./assets/pages/projects/index.html" class="block w-full py-3 px-6 text-center rounded-full transition bg-blue-200 hover:bg-blue-100 active:bg-blue-300 focus:bg-blue-100 sm:w-max">
+          <a href="./assets/pages/projects/index.html"
+            class="block w-full py-3 px-6 text-center rounded-full transition bg-blue-200 hover:bg-blue-100 active:bg-blue-300 focus:bg-blue-100 sm:w-max transform transition hover:scale-105 duration-300 ease-in-out">
             <span class="block text-blue-900 font-semibold text-sm">
-                Projects
+              Projects
             </span>
           </a>
-          <img style="height: 150px;transform: rotate(181deg);opacity: 20%;" src="./assets/images/arrow.png" alt="">
+          <img style="height: 150px;transform: rotate(181deg);opacity: 40%;" src="./assets/images/arrow.png" alt="">
         </div>
         <div class="md:5/12 lg:w-6/12">
           <img src="https://mambaui.com/assets/svg/monsters.svg" alt="image" loading="lazy" width="" height="">
         </div>
       </div>
+    </div>
   </div>
-</div>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00cba9" fill-opacity="0.2" d="M0,32L60,69.3C120,107,240,181,360,197.3C480,213,600,171,720,133.3C840,96,960,64,1080,80C1200,96,1320,160,1380,192L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
 
 
+  <!----------------------------- Contents ------------------------------>
 
-<!----------------------------- Contents ------------------------------>
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00cba9" fill-opacity="0.2" d="M0,32L60,69.3C120,107,240,181,360,197.3C480,213,600,171,720,133.3C840,96,960,64,1080,80C1200,96,1320,160,1380,192L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
-<section class="text-white bg-stone-100 to-black" id="benifits">
+  <section class="text-white bg-stone-100 to-black" id="benifits">
     <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
       <div class="max-w-lg mx-auto text-center">
-        <h2 class="text-3xl text-blue-900 font-bold sm:text-4xl">Benefits of Joining Us</h2>
+        <h2
+          class="text-3xl bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500 font-extrabold sm:text-4xl">
+          Benefits of Joining Us</h2>
 
-        <p class="mt-4 text-gray-800">
+        <p class="mt-4 text-white opacity-80">
           What We offer through the Community
         </p>
       </div>
 
       <div class="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3">
-        <a class="block p-8 transition border-4 border-sky-100 shadow-xl rounded-xl hover:shadow-pink-500/10 hover:border-pink-500/10"
+        <a class="block p-8 transition border-4 border-sky-100 shadow-xl rounded-xl hover:shadow-pink-500/10 hover:border-pink-500/10 shimmer"
           href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-pink-500" fill="none" viewBox="0 0 24 24"
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-pink-700" fill="none" viewBox="0 0 24 24"
             stroke="currentColor">
             <path d="M12 14l9-5-9-5-9 5 9 5z" />
             <path
@@ -240,16 +524,16 @@
               d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
           </svg>
 
-          <h3 class="mt-4 text-xl font-bold text-purple-900"> MENTOR'S GUIDE & SUPPORT</h3>
+          <h3 class="mt-4 text-xl font-bold hero_name"> MENTOR'S GUIDE & SUPPORT</h3>
 
-          <p class="mt-1 text-sm text-gray-700">
+          <p class="mt-1 text-sm text-white opacity-75">
             Clarity, Communication, Commitment – the key to successful mentoring programmes.
           </p>
         </a>
 
-        <a class="block p-8 transition border-4 border-sky-100 shadow-xl rounded-xl hover:shadow-pink-500/10 hover:border-pink-500/10"
-          href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-pink-500" fill="none" viewBox="0 0 24 24"
+        <a class="block p-8 transition border-4 border-sky-100 shadow-xl rounded-xl hover:shadow-pink-500/10 hover:border-pink-500/10 shimmer"
+          href="">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-pink-700" fill="none" viewBox="0 0 24 24"
             stroke="currentColor">
             <path d="M12 14l9-5-9-5-9 5 9 5z" />
             <path
@@ -258,16 +542,16 @@
               d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
           </svg>
 
-          <h3 class="mt-4 text-xl font-bold text-purple-900"> HELP EVERYONE TO LEARN & GROW</h3>
+          <h3 class="mt-4 text-xl font-bold hero_name"> HELP EVERYONE TO LEARN & GROW</h3>
 
-          <p class="mt-1 text-sm text-gray-700">
-            The need to learn and grow is a natural instinct for human beings. 
+          <p class="mt-1 text-sm text-white opacity-75">
+            The need to learn and grow is a natural instinct for human beings.
           </p>
         </a>
 
-        <a class="block p-8 transition border-4 border-sky-100 shadow-xl rounded-xl hover:shadow-pink-500/10 hover:border-pink-500/10"
+        <a class="block p-8 transition border-4 border-sky-100 shadow-xl rounded-xl hover:shadow-pink-500/10 hover:border-pink-500/10 shimmer"
           href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-pink-500" fill="none" viewBox="0 0 24 24"
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-pink-700" fill="none" viewBox="0 0 24 24"
             stroke="currentColor">
             <path d="M12 14l9-5-9-5-9 5 9 5z" />
             <path
@@ -276,16 +560,17 @@
               d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
           </svg>
 
-          <h3 class="mt-4 text-xl font-bold text-purple-900">WORKSHOPS AND MEETING SESSIONS</h3>
+          <h3 class="mt-4 text-xl font-bold hero_name">WORKSHOPS AND MEETING SESSIONS</h3>
 
-          <p class="mt-1 text-sm text-gray-700">
-            A workshop session is an opportunity to surface the unique set of knowledge and experience from the individuals that you have gathered for the session.
+          <p class="mt-1 text-sm text-white opacity-75">
+            A workshop session is an opportunity to surface the unique set of knowledge and experience from the
+            individuals that you have gathered for the session.
           </p>
         </a>
 
-        <a class="block p-8 transition border-4 border-sky-100 shadow-xl rounded-xl hover:shadow-pink-500/10 hover:border-pink-500/10"
+        <a class="block p-8 transition border-4 border-sky-100 shadow-xl rounded-xl hover:shadow-pink-500/10 hover:border-pink-500/10 shimmer"
           href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-pink-500" fill="none" viewBox="0 0 24 24"
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-pink-700" fill="none" viewBox="0 0 24 24"
             stroke="currentColor">
             <path d="M12 14l9-5-9-5-9 5 9 5z" />
             <path
@@ -294,16 +579,16 @@
               d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
           </svg>
 
-          <h3 class="mt-4 text-xl font-bold text-purple-900">HACKATHONS & INTERNSHIP OPPORTUNITY</h3>
+          <h3 class="mt-4 text-xl font-bold hero_name">HACKATHONS & INTERNSHIP OPPORTUNITY</h3>
 
-          <p class="mt-1 text-sm text-gray-700">
-           Hackathons will make you more aware of your own capabilities and thus also bolster your confidence.
+          <p class="mt-1 text-sm text-white opacity-75">
+            Hackathons will make you more aware of your own capabilities and thus also bolster your confidence.
           </p>
         </a>
 
-        <a class="block p-8 transition border-4 border-sky-100 shadow-xl rounded-xl hover:shadow-pink-500/10 hover:border-pink-500/10"
+        <a class="block p-8 transition border-4 border-sky-100 shadow-xl rounded-xl hover:shadow-pink-500/10 hover:border-pink-500/10 shimmer"
           href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-pink-500" fill="none" viewBox="0 0 24 24"
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-pink-700" fill="none" viewBox="0 0 24 24"
             stroke="currentColor">
             <path d="M12 14l9-5-9-5-9 5 9 5z" />
             <path
@@ -312,16 +597,16 @@
               d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
           </svg>
 
-          <h3 class="mt-4 text-xl font-bold text-purple-900">EXPOSURE TO STUDENTS & MENTORS AROUND THE WORLD</h3>
+          <h3 class="mt-4 text-xl font-bold hero_name">EXPOSURE TO STUDENTS & MENTORS AROUND THE WORLD</h3>
 
-          <p class="mt-1 text-sm text-gray-700">
-            Mentors can provide specific insights and information that enable the mentee's success. 
+          <p class="mt-1 text-sm text-white opacity-75">
+            Mentors can provide specific insights and information that enable the mentee's success.
           </p>
         </a>
 
-        <a class="block p-8 transition border-4 border-sky-100 shadow-xl rounded-xl hover:shadow-pink-500/10 hover:border-pink-500/10"
+        <a class="block p-8 transition border-4 border-sky-100 shadow-xl rounded-xl hover:shadow-pink-500/10 hover:border-pink-500/10 shimmer"
           href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-pink-500" fill="none" viewBox="0 0 24 24"
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-pink-700" fill="none" viewBox="0 0 24 24"
             stroke="currentColor">
             <path d="M12 14l9-5-9-5-9 5 9 5z" />
             <path
@@ -330,16 +615,16 @@
               d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
           </svg>
 
-          <h3 class="mt-4 text-xl font-bold text-purple-900 uppercase">Digital campaigns</h3>
+          <h3 class="mt-4 text-xl font-bold hero_name uppercase">Digital campaigns</h3>
 
-          <p class="mt-1 text-sm text-gray-700">
+          <p class="mt-1 text-sm text-white opacity-75">
             The ability to reach out to anyone and anywhere as there are no geographical boundaries with digital.
           </p>
         </a>
       </div>
       <div class="mt-12 text-center">
-        <a class="inline-flex items-center px-8 py-3 mt-8 text-white rounded transition bg-pink-600 hover:bg-pink-400 active:bg-pink-300 focus:bg-pink-100 "
-        type="button" data-modal-toggle="authentication-modal">
+        <a class="inline-flex items-center px-8 py-3 mt-8 text-white rounded transition bg-pink-600 hover:bg-pink-400 active:bg-pink-300 focus:bg-pink-100 transform transition hover:scale-105 duration-300 ease-in-out"
+          type="button" data-modal-toggle="authentication-modal">
           <span class="text-sm font-medium"> Get Started </span>
 
           <svg class="w-5 h-5 ml-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -351,747 +636,575 @@
     </div>
   </section>
 
-<!-------------------------------   Team Members ----------------------------->
-<link
-  crossorigin="anonymous"
-  href="https://unpkg.com/swiper/swiper-bundle.min.css"
-  rel="stylesheet"
-/>
 
-<script
-  crossorigin="anonymous"
-  defer
-  src="https://unpkg.com/swiper/swiper-bundle.min.js"
-></script>
+  <!-------------------------------   Team Members ----------------------------->
+  <link crossorigin="anonymous" href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-<style>
-  .swiper-container {
-    overflow: hidden;
-  }
-</style>
+  <script crossorigin="anonymous" defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-<section class="bg-gray-100">
-  <div
-    class="px-4 py-16 mx-auto sm:px-6 lg:pl-8 lg:pr-0 lg:mr-0 sm:py-24 max-w-[1340px]"
-  >
-    <div
-      class="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-16 gap-y-8 lg:items-center"
-    >
-      <div class="max-w-xl text-center sm:text-left">
-        <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
-          Our Team Members
-          <br class="hidden sm:block lg:hidden" />
-         
-        </h2>
+  <style>
+    .swiper-container {
+      overflow: hidden;
+    }
+  </style>
 
-        <p class="mt-4 text-gray-500">
-         Our Most Valuable Team Members.
-        </p>
+  <section class="">
+    <div class="px-4 py-16 mx-auto sm:px-6 lg:pl-8 lg:pr-0 lg:mr-0 sm:py-24 max-w-[1340px]">
+      <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-16 gap-y-8 lg:items-center">
+        <div class="max-w-xl text-center sm:text-left">
+          <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl shimmer">
+            Our Team Members
+            <br class="hidden sm:block lg:hidden" />
+
+          </h2>
+
+          <p class="mt-4 text-gray-500">
+            Our Most Valuable Team Members.
+          </p>
 
 
-        <div class="hidden lg:mt-8 lg:flex lg:gap-4">
-          <button
-            aria-label="Previous slide"
-            class="p-3 text-pink-600 border border-pink-600 rounded-full hover:bg-pink-600 hover:text-white prev-button"
-          >
-            <svg
-              class="w-5 h-5 transform -rotate-180"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9 5l7 7-7 7"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-              />
-            </svg>
-          </button>
+          <div class="hidden lg:mt-8 lg:flex lg:gap-4">
+            <button aria-label="Previous slide"
+              class="p-3 text-pink-600 border border-pink-600 rounded-full hover:bg-pink-600 hover:text-white prev-button">
+              <svg class="w-5 h-5 transform -rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+              </svg>
+            </button>
 
-          <button
-            aria-label="Next slide"
-            class="p-3 text-pink-600 border border-pink-600 rounded-full hover:bg-pink-600 hover:text-white next-button"
-          >
-            <svg
-              class="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9 5l7 7-7 7"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-              />
-            </svg>
-          </button>
+            <button aria-label="Next slide"
+              class="p-3 text-pink-600 border border-pink-600 rounded-full hover:bg-pink-600 hover:text-white next-button">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+              </svg>
+            </button>
+          </div>
         </div>
-      </div>
 
-      <div class="-mx-6 lg:col-span-2 lg:mx-0">
-        <div class="swiper-container">
-          <ul class="swiper-wrapper">
-            <li class="swiper-slide">
-              <blockquote
-                class="flex flex-col justify-between h-full p-12 bg-white"
-              >
-                <div>
-                  <div class="flex gap-0.5 text-green-500">
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
+        <div class="-mx-6 lg:col-span-2 lg:mx-0">
+          <div class="swiper-container">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <blockquote class="flex flex-col justify-between h-full p-12  bg-white opacity-80 rounded-2xl">
+                  <div>
+                    <div class="flex gap-0.5 text-green-500">
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
 
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
 
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
 
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
 
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-                  </div>
-
-                  <a href="https://www.linkedin.com/in/sanket-banerjee-6a5029231/"><div class="mt-4">
-                    <div class="avatar">
-                      <div class="w-24 rounded-xl">
-                        <img src="./assets/images/sanket.png" />
-                      </div>
+                      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
                     </div>
-                    <p class="text-2xl font-bold text-pink-600 sm:text-3xl">
-                      Sanket Banerjee
-                    </p>
 
-                    <p class="mt-4 leading-relaxed text-gray-500">
-                       Founder of AEC Developers Forum.
-                    </p></a>
+                    <a href="https://www.linkedin.com/in/sanket-banerjee-6a5029231/">
+                      <div class="mt-4">
+                        <div class="avatar">
+                          <div class="w-24 rounded-xl">
+                            <img style="border-radius: 20px;" src="./assets/images/sanket.png" />
+                          </div>
+                        </div>
+                        <p class="text-2xl font-bold text-pink-600 sm:text-3xl">
+                          Sanket Banerjee
+                        </p>
+
+                        <p class="mt-4 leading-relaxed text-gray-500">
+                          Founder of AEC Developers Forum.<br>Information Technology
+                        </p>
+                    </a>
                   </div>
+          </div>
+
+          <footer class="mt-8 text-sm text-gray-500">
+            &mdash; Sanket Banerjee
+          </footer>
+          </blockquote>
+          </li>
+
+          <li class="swiper-slide">
+            <blockquote class="flex flex-col justify-between h-full p-12  bg-white opacity-80 rounded-2xl">
+              <div>
+                <div class="flex gap-0.5 text-green-500">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
                 </div>
 
-                <footer class="mt-8 text-sm text-gray-500">
-                  &mdash; Sanket Banerjee
-                </footer>
-              </blockquote>
-            </li>
-
-            <li class="swiper-slide">
-              <blockquote
-                class="flex flex-col justify-between h-full p-12 bg-white"
-              >
-                <div>
-                  <div class="flex gap-0.5 text-green-500">
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-                  </div>
-
-                  <a href="https://www.linkedin.com/in/abhijit-sinha-a7060a23b/"><div class="mt-4">
+                <a href="https://www.linkedin.com/in/abhijit-sinha-a7060a23b/">
+                  <div class="mt-4">
                     <div class="avatar">
                       <div class="w-24 rounded-xl">
-                        <img src="./assets/images/abhijit.jpeg" />
+                        <img style="border-radius: 20px;"
+                          src="https://media-exp1.licdn.com/dms/image/C5603AQHbYhtM-gXqqQ/profile-displayphoto-shrink_800_800/0/1652974518250?e=1661385600&v=beta&t=NiLisD3YeyE1l2fn-abhU-4_VCHiSSI1D7IArPQk7YU" />
                       </div>
                     </div>
                     <p class="text-2xl font-bold text-pink-600 sm:text-3xl">
                       Abhijit Sinha
-                    </p></a>
-
-                    <p class="mt-4 leading-relaxed text-gray-500">
-                       Core-Community Member of AEC Developers Forum.
                     </p>
-                  </div>
-                </div>
+                </a>
 
-                <footer class="mt-8 text-sm text-gray-500">
-                  &mdash; Abhijit Sinha
-                </footer>
-              </blockquote>
-            </li>
-
-            <li class="swiper-slide">
-              <blockquote
-                class="flex flex-col justify-between h-full p-12 bg-white"
-              >
-                <div>
-                  <div class="flex gap-0.5 text-green-500">
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-                  </div>
-
-                  <div class="mt-4">
-                    <div class="avatar">
-                      <div class="w-24 rounded-xl">
-                        <img src="./assets/images/sahil.jpeg" />
-                      </div>
-                    </div>
-                    <p class="text-2xl font-bold text-pink-600 sm:text-3xl">
-                      Sahil Kr. Soni
-                    </p>
-
-                    <p class="mt-4 leading-relaxed text-gray-500">
-                      Core-Community Member of AEC Developers Forum.
-                    </p>
-                  </div>
-                </div>
-
-                <footer class="mt-8 text-sm text-gray-500">
-                  &mdash; Sahil Kr. Soni
-                </footer>
-              </blockquote>
-            </li>
-            <li class="swiper-slide">
-              <blockquote
-                class="flex flex-col justify-between h-full p-12 bg-white"
-              >
-                <div>
-                  <div class="flex gap-0.5 text-green-500">
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-                  </div>
-
-                  <a href="https://www.linkedin.com/in/bishal-bhattacharjee-805769232/"><div class="mt-4">
-                    <div class="avatar">
-                      <div class="w-24 rounded-xl">
-                        <img src="https://media-exp1.licdn.com/dms/image/C5603AQE7SB8xEcj_Xw/profile-displayphoto-shrink_800_800/0/1645427537931?e=1661385600&v=beta&t=tOduCkg4xTsQSkbG126vVygFNmLeMrtTWPRpLgZ_h08" />
-                      </div>
-                    </div>
-                    <p class="text-2xl font-bold text-pink-600 sm:text-3xl">
-                      Bishal Bhattacharjee
-                    </p></a>
-
-                    <p class="mt-4 leading-relaxed text-gray-500">
-                      Core-Community Member of AEC Developers Forum.
-                    </p>
-                  </div>
-                </div>
-
-                <footer class="mt-8 text-sm text-gray-500">
-                  &mdash; Bishal Bhattacharjee
-                </footer>
-              </blockquote>
-            </li>
-
-            <li class="swiper-slide">
-              <blockquote
-                class="flex flex-col justify-between h-full p-12 bg-white"
-              >
-                <div>
-                  <div class="flex gap-0.5 text-green-500">
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-                  </div>
-
-                  <a href="https://www.linkedin.com/in/aditya-shaw-216171224/"><div class="mt-4">
-                    <div class="avatar">
-                      <div class="w-24 rounded-xl">
-                        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQFDRTdTaL5WcA/profile-displayphoto-shrink_800_800/0/1642345314334?e=1661385600&v=beta&t=l9CvmbhJQ_hGmcn46Kg3yr_EemLtBY1o7h-yWlAO38Q" />
-                      </div>
-                    </div>
-                    <p class="text-2xl font-bold text-pink-600 sm:text-3xl">
-                      Aditya Shaw
-                    </p></a>
-
-                    <p class="mt-4 leading-relaxed text-gray-500">
-                      Core-Community Member of AEC Developers Forum.
-                    </p>
-                  </div>
-                </div>
-
-                <footer class="mt-8 text-sm text-gray-500">
-                  &mdash; Aditya Shaw
-                </footer>
-              </blockquote>
-            </li>
-            <li class="swiper-slide">
-              <blockquote
-                class="flex flex-col justify-between h-full p-12 bg-white"
-              >
-                <div>
-                  <div class="flex gap-0.5 text-green-500">
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-
-                    <svg
-                      class="w-5 h-5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                      />
-                    </svg>
-                  </div>
-
-                  <a href="https://www.linkedin.com/in/the-akash-kumar-gupta/"><div class="mt-4">
-                    <div class="avatar">
-                      <div class="w-24 rounded-xl">
-                        <img src="https://media-exp1.licdn.com/dms/image/C5603AQF7_HYZW9rb5Q/profile-displayphoto-shrink_800_800/0/1650030608200?e=1661385600&v=beta&t=A9aS8fFbbMBV041LouGn4YHrMU7QUF8DaqEBMe8c5J4" />
-                      </div>
-                    </div>
-                    <p class="text-2xl font-bold text-pink-600 sm:text-3xl">
-                      Akash Kumar Gupta
-                    </p></a>
-
-                    <p class="mt-4 leading-relaxed text-gray-500">
-                      Core-Community Member of AEC Developers Forum.
-                    </p>
-                  </div>
-                </div>
-
-                <footer class="mt-8 text-sm text-gray-500">
-                  &mdash; Akash Kumar Gupta
-                </footer>
-              </blockquote>
-            </li>
-          </ul>
+                <p class="mt-4 leading-relaxed text-gray-500">
+                  Core-Community Member of AEC Developers Forum.
+                </p>
+              </div>
         </div>
+
+        <footer class="mt-8 text-sm text-gray-500">
+          &mdash; Abhijit Sinha
+        </footer>
+        </blockquote>
+        </li>
+
+        <li class="swiper-slide">
+          <blockquote class="flex flex-col justify-between h-full p-12  bg-white opacity-80 rounded-2xl">
+            <div>
+              <div class="flex gap-0.5 text-green-500">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+
+              <div class="mt-4">
+                <div class="avatar">
+                  <div class="w-24 h-modal rounded-xl">
+                    <img style="border-radius: 20px;" style="height: 60%;width: 70%;"
+                      src="./assets/images/sahil.jpeg" />
+                  </div>
+                </div>
+                <p class="text-2xl font-bold text-pink-600 sm:text-3xl">
+                  Sahil Kr. Soni
+                </p>
+
+                <p class="mt-4 leading-relaxed text-gray-500">
+                  Core-Community Member of AEC Developers Forum.
+                </p>
+              </div>
+            </div>
+
+            <footer class="mt-8 text-sm text-gray-500">
+              &mdash; Sahil Kr. Soni
+            </footer>
+          </blockquote>
+        </li>
+        <li class="swiper-slide">
+          <blockquote class="flex flex-col justify-between h-full p-12  bg-white opacity-80 rounded-2xl">
+            <div>
+              <div class="flex gap-0.5 text-green-500">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              </div>
+
+              <a href="https://www.linkedin.com/in/bishal-bhattacharjee-805769232/">
+                <div class="mt-4">
+                  <div class="avatar">
+                    <div class="w-24 rounded-xl">
+                      <img style="border-radius: 20px;"
+                        src="https://media-exp1.licdn.com/dms/image/C5603AQE7SB8xEcj_Xw/profile-displayphoto-shrink_800_800/0/1645427537931?e=1661385600&v=beta&t=tOduCkg4xTsQSkbG126vVygFNmLeMrtTWPRpLgZ_h08" />
+                    </div>
+                  </div>
+                  <p class="text-2xl font-bold text-pink-600 sm:text-3xl">
+                    Bishal Bhattacharjee
+                  </p>
+              </a>
+
+              <p class="mt-4 leading-relaxed text-gray-500">
+                Core-Community Member of AEC Developers Forum.
+              </p>
+            </div>
       </div>
+
+      <footer class="mt-8 text-sm text-gray-500">
+        &mdash; Bishal Bhattacharjee
+      </footer>
+      </blockquote>
+      </li>
+
+      <li class="swiper-slide">
+        <blockquote class="flex flex-col justify-between h-full p-12  bg-white opacity-80 rounded-2xl">
+          <div>
+            <div class="flex gap-0.5 text-green-500">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            </div>
+
+            <a href="https://www.linkedin.com/in/aditya-shaw-216171224/">
+              <div class="mt-4">
+                <div class="avatar">
+                  <div class="w-24 rounded-xl">
+                    <img style="border-radius: 20px;"
+                      src="https://media-exp1.licdn.com/dms/image/C4E03AQFDRTdTaL5WcA/profile-displayphoto-shrink_800_800/0/1642345314334?e=1661385600&v=beta&t=l9CvmbhJQ_hGmcn46Kg3yr_EemLtBY1o7h-yWlAO38Q" />
+                  </div>
+                </div>
+                <p class="text-2xl font-bold text-pink-600 sm:text-3xl">
+                  Aditya Shaw
+                </p>
+            </a>
+
+            <p class="mt-4 leading-relaxed text-gray-500">
+              Core-Community Member of AEC Developers Forum.
+            </p>
+          </div>
+    </div>
+
+    <footer class="mt-8 text-sm text-gray-500">
+      &mdash; Aditya Shaw
+    </footer>
+    </blockquote>
+    </li>
+    <li class="swiper-slide">
+      <blockquote class="flex flex-col justify-between h-full p-12 bg-white opacity-80 rounded-2xl">
+        <div>
+          <div class="flex gap-0.5 text-green-500">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+          </div>
+
+          <a href="https://www.linkedin.com/in/the-akash-kumar-gupta/">
+            <div class="mt-4">
+              <div class="avatar">
+                <div class="w-24 rounded-xl">
+                  <img style="border-radius: 20px;"
+                    src="https://media-exp1.licdn.com/dms/image/C5603AQF7_HYZW9rb5Q/profile-displayphoto-shrink_800_800/0/1650030608200?e=1661385600&v=beta&t=A9aS8fFbbMBV041LouGn4YHrMU7QUF8DaqEBMe8c5J4" />
+                </div>
+              </div>
+              <p class="text-2xl font-bold text-pink-600 sm:text-3xl">
+                Akash Kumar Gupta
+              </p>
+          </a>
+
+          <p class="mt-4 leading-relaxed text-gray-500">
+            Core-Community Member of AEC Developers Forum.
+          </p>
+        </div>
+        </div>
+
+        <footer class="mt-8 text-sm text-gray-500">
+          &mdash; Akash Kumar Gupta
+        </footer>
+      </blockquote>
+    </li>
+    </ul>
+    </div>
+    </div>
     </div>
 
     <div class="flex justify-center gap-4 mt-8 lg:hidden">
-      <button
-        aria-label="Previous slide"
-        class="p-4 text-pink-600 border border-pink-600 rounded-full hover:bg-pink-600 hover:text-white prev-button"
-      >
-        <svg
-          class="w-5 h-5 transform -rotate-180"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M9 5l7 7-7 7"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-          />
+      <button aria-label="Previous slide"
+        class="p-4 text-pink-600 border border-pink-600 rounded-full hover:bg-pink-600 hover:text-white prev-button">
+        <svg class="w-5 h-5 transform -rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
         </svg>
       </button>
 
-      <button
-        aria-label="Next slide"
-        class="p-4 text-pink-600 border border-pink-600 rounded-full hover:bg-pink-600 hover:text-white next-button"
-      >
-        <svg
-          class="w-5 h-5"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M9 5l7 7-7 7"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-          />
+      <button aria-label="Next slide"
+        class="p-4 text-pink-600 border border-pink-600 rounded-full hover:bg-pink-600 hover:text-white next-button">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
         </svg>
       </button>
     </div>
-  </div>
-</section>
+    </div>
+  </section>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    new Swiper('.swiper-container', {
-      loop: true,
-      slidesPerView: 1,
-      spaceBetween: 32,
-      autoplay: {
-        delay: 8000,
-      },
-      breakpoints: {
-        640: {
-          centeredSlides: true,
-          slidesPerView: 1.25,
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Swiper('.swiper-container', {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 32,
+        autoplay: {
+          delay: 8000,
         },
-        1024: {
-          centeredSlides: false,
-          slidesPerView: 1.5,
+        breakpoints: {
+          640: {
+            centeredSlides: true,
+            slidesPerView: 1.25,
+          },
+          1024: {
+            centeredSlides: false,
+            slidesPerView: 1.5,
+          },
         },
-      },
-      navigation: {
-        nextEl: '.next-button',
-        prevEl: '.prev-button',
-      },
+        navigation: {
+          nextEl: '.next-button',
+          prevEl: '.prev-button',
+        },
+      })
     })
-  })
-</script>
+  </script>
 
-<br><br><br><br><br>
-<!-------------------------- Footer Section -------------------------->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f67f" fill-opacity="1" d="M0,96L60,128C120,160,240,224,360,245.3C480,267,600,245,720,202.7C840,160,960,96,1080,69.3C1200,43,1320,53,1380,58.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-  <footer style="background-color: #F3F77F;" class=" ">
-    <div class="relative max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8 lg:pt-24">
-      <div class="absolute top-4 sm:top-6 lg:top-8 right-4 sm:right-6 lg:right-8">
-        <a class="inline-block p-2 text-teal-300 transition bg-stone-600 rounded-full sm:p-3 lg:p-4 hover:bg-gray-600"
-          href="#">
-          <span class="sr-only">Back to top</span>
+  <br><br><br><br><br>
+  <!-------------------------- Footer Section -------------------------->
 
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd"
-              d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
-              clip-rule="evenodd" />
-          </svg>
-        </a>
-      </div>
-
-      <div class="lg:flex lg:items-end lg:justify-between">
+  <footer>
+    <div class="pt-8  md:pt-20">
+      <div class="container m-auto px-6 space-y-8 text-gray-400 md:px-12 lg:px-20">
         <div>
-          <div class="flex justify-center text-teal-300 lg:justify-start">
-              <img src="./assets/images/logo.png" alt="logo-AECDEV" style="height:40px; border-radius:5px;opacity:90%; ">
+          <div class="mb-6 gap-6 items-center justify-between py-6 sm:flex md:mb-16 md:py-0 md:space-y-6">
+            <img width="100" height="42" src="./assets/images/logo.png" alt="logo AECDEV" class="w-32 rounded-2xl" />
+            <div class="flex flex-wrap flex-col-reverse gap-6 mt-6 sm:flex-row sm:mt-0 sm:items-center">
+              <div class="flex gap-6">
+                <a href="https://github.com/Sanket2004" target="blank" aria-label="github" class="hover:text-cyan-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-github" viewBox="0 0 16 16">
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                  </svg>
+                </a>
+                <a href="https://twitter.com/SanketBanerje15" target="blank" aria-label="twitter"
+                  class="hover:text-cyan-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-twitter" viewBox="0 0 16 16">
+                    <path
+                      d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                  </svg>
+                </a>
+                <a target="blank" aria-label="whatsapp" class="hover:text-cyan-400"
+                  href="https://chat.whatsapp.com/DigFbJkam36AlJAOO4FjP2">
+                  <svg class="fill-current h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                    <path
+                      d="M18.403 5.633A8.919 8.919 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a8.981 8.981 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.926 8.926 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.446 7.446 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.448 7.448 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.413 7.413 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73-.205-.075-.354-.112-.504.112s-.58.729-.711.879-.262.168-.486.056-.947-.349-1.804-1.113c-.667-.595-1.117-1.329-1.248-1.554s-.014-.346.099-.458c.101-.1.224-.262.336-.393.112-.131.149-.224.224-.374s.038-.281-.019-.393c-.056-.113-.505-1.217-.692-1.666-.181-.435-.366-.377-.504-.383a9.65 9.65 0 0 0-.429-.008.826.826 0 0 0-.599.28c-.206.225-.785.767-.785 1.871s.804 2.171.916 2.321c.112.15 1.582 2.415 3.832 3.387.536.231.954.369 1.279.473.537.171 1.026.146 1.413.089.431-.064 1.327-.542 1.514-1.066.187-.524.187-.973.131-1.067-.056-.094-.207-.151-.43-.263">
+                    </path>
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
-
-          <p class="max-w-md mx-auto mt-6 leading-relaxed text-center text-stone-500 lg:text-left">
-            Student Delevopers Community of Asansol Engineering College
-          </p>
+          <div>
+            <div class="pb-16 grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-5">
+              <!--               <div>
+                <h6 class="text-lg font-medium text-white">Categories</h6>
+                <ul class="list-inside mt-4 space-y-4">
+                  <li>
+                    <a href="#" class="hover:text-cyan-400 transition">About</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-cyan-400 transition">Customers</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-cyan-400 transition">Enterprise</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-cyan-400 transition">Partners</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-cyan-400 transition">Jobs</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h6 class="text-lg font-medium text-white">Products</h6>
+                <ul class="list-inside mt-4 space-y-4">
+                  <li>
+                    <a href="#" class="hover:text-cyan-400 transition">About</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-cyan-400 transition">Customers</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-cyan-400 transition">Enterprise</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-cyan-400 transition">Partners</a>
+                  </li>
+                  <li>
+                    <a href="#" class="hover:text-cyan-400 transition">Jobs</a>
+                  </li>
+                </ul>
+              </div> -->
+              <div>
+                <h6 class="text-lg font-medium text-white">Sections</h6>
+                <ul class="list-inside mt-4 space-y-4">
+                  <li>
+                    <a href="#about" class="hover:text-cyan-400 transition">About</a>
+                  </li>
+                  <li>
+                    <a href="#benifits" class="hover:text-cyan-400 transition">Benifits</a>
+                  </li>
+                  <li>
+                    <a href="./assets/pages/projects/index.html" class="hover:text-cyan-400 transition">Projects</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-span-2 sm:col-span-3 md:col-span-2">
+                <h6 class="text-lg font-medium text-white">Contact</h6>
+                <ul class="list-inside mt-4 space-y-4">
+                  <li>
+                    <a href="tel:+918348252536" class="hover:text-cyan-400 transition">+91 8348252536</a>
+                  </li>
+                  <li>
+                    <a href="mailto:sanketbanerjee.2004@gmail.com"
+                      class="hover:text-cyan-400 transition">sanketbanerjee.2004@gmail.com</a>
+                  </li>
+                  <li>
+                    <form action="">
+                      <label for="newsletter" class="text-lg text-white">Subscribe to our newsletter</label>
+                      <div class="relative mt-4">
+                        <input type="email" name="newsletter" id="newsletter" placeholder="Your email"
+                          class="w-full px-4 py-3 ring-1 ring-cyan-700 rounded-xl bg-gray-900 bg-opacity-20 invalid:ring-red-400 invalid:outline-none">
+                        <button style="background: #00ffff54;" type="submit" title="Submit"
+                          class="absolute right-0 w-max py-3 px-6 text-center rounded-r-xl transition bg-cyan-400 hover:bg-cyan-300 active:bg-cyan-600 focus:bg-cyan-300">
+                          <span class="text-white font-medium">
+                            Send
+                          </span>
+                        </button>
+                      </div>
+                    </form>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="py-8 border-t border-cyan-800 text-gray-200 flex justify-between">
+              <span>&copy; AECDEV Forum - 2022 <span id="year"></span></span>
+              <span>All right reserved</span>
+            </div>
+          </div>
         </div>
-
-        <nav class="mt-12 lg:mt-0" aria-labelledby="footer-navigation">
-          <h2 class="sr-only" id="footer-navigation">Footer navigation</h2>
-
-          <ul class="flex flex-wrap justify-center gap-6 lg:justify-end md:gap-8 lg:gap-12">
-            <li>
-              <a class="text-stone-500 transition hover:text-stone-700" href="#about">
-                About
-              </a>
-            </li>
-
-            <li>
-              <a class="text-stone-500 transition hover:text-stone-700" href="#benifits">
-                Benefits
-              </a>
-            </li>
-
-            <li>
-              <a class="text-stone-500 transition hover:text-stone-700" href="./assets/pages/projects/index.html">
-                Projects
-              </a>
-            </li>
-
-            <li>
-              <a class="text-stone-500 transition hover:text-stone-700" href="/404.html">
-                Blog
-              </a>
-            </li>
-          </ul>
-        </nav>
       </div>
-
-      <p class="mt-12 text-sm text-center text-gray-400 lg:text-right">
-        Copyright &copy; 2022. All rights reserved.
-      </p>
     </div>
   </footer>
 
-  
 
-                              
 
-<script>
-  window.addEventListener( "pageshow", function ( event ) {
-  var historyTraversal = event.persisted || ( typeof window.performance != "undefined" && window.performance.navigation.type === 2 );
-  if ( historyTraversal ) {
-    // Handle page restore.
-    //alert('refresh');
-    window.location.reload();
-  }
-});
-</script>
+
+
+  <script>
+    window.addEventListener("pageshow", function (event) {
+      var historyTraversal = event.persisted || (typeof window.performance != "undefined" && window.performance.navigation.type === 2);
+      if (historyTraversal) {
+        // Handle page restore.
+        //alert('refresh');
+        window.location.reload();
+      }
+    });
+  </script>
 </body>
 
 </html>
