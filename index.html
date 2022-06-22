@@ -55,11 +55,218 @@
     .alert_style {
       color: blueviolet;
     }
+
+    .popup{
+    background-color: #ffffff;
+    width: 450px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+}
+.popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #c5c5c5;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+}
+    
   </style>
 </head>
 
 <body class="leading-normal tracking-normal text-indigo-400 m-6 bg-cover bg-fixed"
   style="background-image: url('header.png');letter-spacing: 2px;">
+
+<!--   <div class="popup" >
+    <button id="close">&times;</button>
+
+</div>
+<script>
+  window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector(".popup").style.display = "block";
+        },
+        1000
+    )
+});
+
+
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+});
+</script> -->
+
+<!------------------------------------------------------------ start of footer modal ----------------------------------------------------->
+
+<div id="whatsapp-modal" tabindex="-1"
+    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 md:inset-0 h-modal md:h-full justify-center items-center"
+    aria-hidden="true">
+    <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+      <div class="relative bg-white opacity-75 rounded-lg shadow dark:bg-gray-700">
+        <div class="p-6 text-center">
+          <svg class="mx-auto mb-4 w-14 h-14 text-gray-400 dark:text-gray-200" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Click To Join <span class="shimmer">AECDEV</span> WhatsApp Group</h3>
+         <a href="https://chat.whatsapp.com/DigFbJkam36AlJAOO4FjP2"><button data-modal-toggle="popup-modal" type="button" 
+            class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2 transform transition hover:scale-105 duration-300 ease-in-out"">
+            Yes, I'm sure
+          </button></a> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="whatsapp-id">
+<div  class="scroll-down"></div>
+<div id="footer-modal" class="modal">
+  <div class="modal-container">
+    <div class="modal-left">
+      <h1 class="modal-title">Welcome!</h1>
+      <p class="modal-desc">Asansol Engineering College Developers Forum</p>
+      <form action="https://formsubmit.co/sanketbanerjee.2004@gmail.com" id="footer-contact-form" method="POST">
+        <div id="footer-alert" class="footer-alert_style"></div>
+      <div class="input-block">
+        <label for="name" class="input-label">Name</label>
+        <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_subject" value="AECDEV Registration-2022">
+        <input type="text" name="Name" id="name" placeholder="Your Name" required="">
+      </div>
+      <div class="input-block">
+        <label for="email" class="input-label">Email</label>
+        <input type="email" name="Email" id="email" placeholder="Email" required="" >
+      </div>
+      <div class="input-block">
+        <label for="mobile_number" class="input-label">Mobile Number</label>
+        <input type="number" name="Mobile number" id="mobile_number" placeholder="+91" required>
+      </div>
+      <div class="modal-buttons" >
+        <button type="submit" class="input-button" >Submit</button>
+      </div>
+    </form>
+      <p class="sign-up"><a href="https://chat.whatsapp.com/DigFbJkam36AlJAOO4FjP2">Join WhatsApp</a><br>
+        <a href="mailto:sanketbanerjee.2004@gmail.com">Contact Admin</a>
+      </p>
+    </div>
+    <div class="modal-right">
+      <img src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dfd2ec5a01006fd8c4d7592a381d3776&auto=format&fit=crop&w=1000&q=80" alt="">
+    </div>
+    <button class="icon-button close-button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+    <path d="M 25 3 C 12.86158 3 3 12.86158 3 25 C 3 37.13842 12.86158 47 25 47 C 37.13842 47 47 37.13842 47 25 C 47 12.86158 37.13842 3 25 3 z M 25 5 C 36.05754 5 45 13.94246 45 25 C 45 36.05754 36.05754 45 25 45 C 13.94246 45 5 36.05754 5 25 C 5 13.94246 13.94246 5 25 5 z M 16.990234 15.990234 A 1.0001 1.0001 0 0 0 16.292969 17.707031 L 23.585938 25 L 16.292969 32.292969 A 1.0001 1.0001 0 1 0 17.707031 33.707031 L 25 26.414062 L 32.292969 33.707031 A 1.0001 1.0001 0 1 0 33.707031 32.292969 L 26.414062 25 L 33.707031 17.707031 A 1.0001 1.0001 0 0 0 32.980469 15.990234 A 1.0001 1.0001 0 0 0 32.292969 16.292969 L 25 23.585938 L 17.707031 16.292969 A 1.0001 1.0001 0 0 0 16.990234 15.990234 z"></path>
+</svg>
+      </button>
+  </div>
+  <button class="modal-button">Click here to register</button>
+</div>
+</div>
+<div id="whatsapp-id"></div>
+
+
+<script>
+  const footer_form = document.getElementById("footer-contact-form");
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    var status = document.getElementById("footer-alert");
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+      method: footer_form.method,
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then((response) => {
+        status.innerHTML = "Your message has been sent.";
+        document.querySelector(".footer-alert_style").style.display = "block";
+
+        // hide alert after 3 seconds
+        setTimeout(function () {
+          document.querySelector(".footer-alert_style").style.display = "none";
+        }, 4000);
+        footer_form.reset();
+      })
+      .catch((error) => {
+        status.innerHTML =
+          "Oops! There was a problem delivering your message, please contact via other means.";
+        document.querySelector(".footer-alert_style").style.display = "block";
+
+        // hide alert after 3 seconds
+        setTimeout(function () {
+          document.querySelector(".footer-alert_style").style.display = "none";
+        }, 4000);
+      });
+  }
+  footer_form.addEventListener("submit", handleSubmit);
+</script>
+
+
+<script>
+  function toggleModal(whatsappid){
+document.getElementById(whatsappid).classList.toggle("hidden");
+document.getElementById(whatsappid + "-backdrop").classList.toggle("hidden");
+document.getElementById(whatsappid).classList.toggle("flex");
+document.getElementById(whatsappid + "-backdrop").classList.toggle("flex");
+}
+
+</script>
+
+<!-----------------------------------------------------end of footer modal ------------------------------------------------------>
+
+<script>
+  const body = document.querySelector("body");
+const modal = document.querySelector(".modal");
+const modalButton = document.querySelector(".modal-button");
+const closeButton = document.querySelector(".close-button");
+const scrollDown = document.querySelector(".scroll-down");
+let isOpened = false;
+
+const openModal = () => {
+  modal.classList.add("is-open");
+  body.style.overflow = "hidden";
+};
+
+const closeModal = () => {
+  modal.classList.remove("is-open");
+  body.style.overflow = "initial";
+};
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > window.innerHeight / 3 && !isOpened) {
+    isOpened = true;
+    scrollDown.style.display = "none";
+    openModal();
+  }
+});
+
+modalButton.addEventListener("click", openModal);
+closeButton.addEventListener("click", closeModal);
+
+document.onkeydown = evt => {
+  evt = evt || window.event;
+  evt.keyCode === 27 ? closeModal() : false;
+};
+</script>
 
 <!-- This component uses Swiper JS - https://swiperjs.com/ -->
 
@@ -142,6 +349,8 @@
     },
   })
 </script>
+
+<!--------------------------------------- whatsapp Confirmation modal -------------------------------------->
 
   <div id="popup-modal" tabindex="-1"
     class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 md:inset-0 h-modal md:h-full justify-center items-center"
@@ -291,7 +500,7 @@
     id="modal-id">
     <div class="relative w-auto my-6 mx-auto max-w-3xl">
       <!--content-->
-      <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+      <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white opacity-80 outline-none focus:outline-none">
         <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
           <!--body-->
           <div class="py-16 bg-white rounded-3xl">
@@ -322,11 +531,11 @@
                   
               </div>
               <div class="m-auto space-y-6 md:w-8/12 lg:w-7/12">
-                <h1 class="text-xl text-Grey opacity-75 font-bold text-center md:text-4xl">Get Started now</h1>
+                <h1 class="text-2xl text-Grey opacity-90 font-bold text-center md:text-4xl black-lives-matter">Get Started now</h1>
                 <p class="text-xl text-center">Be a part of our Developers Community of <span id="hero_name">Asansol
                     Engineering College</span><br><span class="shimmer">AECDEV</span></p>
                 <div class="flex flex-wrap justify-center gap-6">
-                  <a type="button" href="https://chat.whatsapp.com/DigFbJkam36AlJAOO4FjP2" title="Get started"
+                  <a type="button" href="https://chat.whatsapp.com/DigFbJkam36AlJAOO4FjP2"  title="Get started"
                     class="block w-full py-3 px-6 text-center text-white rounded-full transition bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 transform transition hover:scale-105 duration-300 ease-in-out sm:w-max">
                     <span class="text-white ">
                       Join WhatsApp
@@ -451,7 +660,7 @@
           <div class="flex flex-wrap justify-center gap-4 mt-8">
             <a class="bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
               type="button" data-modal-toggle="authentication-modal">
-              Get Started
+              Register Now
             </a>
 
             <a class="bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
@@ -1146,6 +1355,7 @@
               <div>
                 <h6 class="text-lg font-medium text-white">Sections</h6>
                 <ul class="list-inside mt-4 space-y-4">
+
                   <li>
                     <a href="#about" class="hover:text-cyan-400 transition">About</a>
                   </li>
@@ -1154,6 +1364,12 @@
                   </li>
                   <li>
                     <a href="./assets/pages/projects/index.html" class="hover:text-cyan-400 transition">Projects</a>
+                  </li>
+                  <li>
+                    <a data-modal-toggle="authentication-modal" class="hover:text-cyan-400 transition shimmer" style="cursor:pointer;">Registration-2022</a>
+                  </li>
+                  <li>
+                    <a data-modal-toggle="popup-modal" class="hover:text-cyan-400 transition shimmer" style="cursor:pointer;">WhatsApp Group</a>
                   </li>
                 </ul>
               </div>
